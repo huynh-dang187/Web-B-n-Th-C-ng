@@ -1,0 +1,147 @@
+/* header */
+
+.header {
+  background: #f3e1f0;
+  z-index: 10000;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0 0;
+}
+
+.header .main-content .logo {
+  margin-left: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  display: flex;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #77e23a;
+}
+.action {
+  display: flex;
+  align-items: center;
+}
+.iconphone {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  white-space: nowrap;
+}
+.navbar_item {
+  display: block;
+  position: relative;
+}
+.navbar_item_label {
+  color: black;
+  font-weight: 600;
+  opacity: 60%;
+  font-size: 16px;
+  transition: 0.2s;
+  display: block;
+  padding-block: 41px;
+  height: 100%;
+}
+.navbar_item_label:hover {
+  transition: 0.2s;
+  opacity: unset;
+}
+.navbar_item_dropdown {
+  display: none;
+}
+.navbar_item:hover .navbar_item_dropdown {
+  display: block;
+  position: absolute;
+  top: calc(100% + px);
+  left: 0;
+  width: 230px;
+  background: #fdbbff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdown_item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dropdown_item {
+  padding: 10px 25px;
+  line-height: 30px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.dropdown_item:hover > a {
+  transition: 0.2s;
+  color: #fff;
+}
+.dropdown_item:hover {
+  transition: 0.2s;
+  background: #9d0b8c;
+}
+
+/* CSS cho thanh tìm kiếm */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 200px;
+  height: 40px;
+}
+
+.search-button {
+  background-color: #e897c4;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  height: 40px;
+}
+
+.search-button i {
+  color: white;
+}

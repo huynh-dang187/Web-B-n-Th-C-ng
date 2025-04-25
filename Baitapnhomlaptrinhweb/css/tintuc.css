@@ -1,0 +1,131 @@
+Phần này thuộc trang tin tức
+:root{
+    --color_text : rgb(120, 118, 118);
+  }
+
+  
+  .tab_mains {
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    column-gap: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Poppins", sans-serif; /* Đảm bảo "Poppins" được tải */
+    margin-bottom: 100px;
+  }
+
+  .tab_main1{
+    display: grid;
+    grid-template-columns: auto; 
+    row-gap: 30px;
+    height: auto;
+  }
+  
+  .tab_main {
+    height: auto;
+    width: 380px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
+  
+  .tab_main:hover{
+
+    .tab_img img{
+        transform: scale(1.3); /* Phóng to ảnh 1.3 lần */
+        transition: transform 0.5s ease;
+        z-index: 20;
+    }
+
+    .tab_content_button #docthem{
+        background-color: orange;
+        color: #ffffff;
+    }
+  }
+
+  .tab_img{
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+  }
+  
+  .tab_img img {
+    margin: 0;
+    width: 100%; /* Đảm bảo ảnh luôn chiếm hết chiều rộng của thẻ chứa */
+    height: 100%; /* Đảm bảo ảnh luôn chiếm hết chiều cao của thẻ chứa */
+    transition: transform 0.5s ease; /* Thêm chuyển động mượt */
+    transform-origin: center center; /* Phóng to từ trung tâm */
+  }
+  
+  .tab_content {
+    padding: 10px 30px 30px 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  
+  .day , .by_comment , .tab_content_header, .tab_content_content{
+    padding: 10px;
+  }
+
+  .day{
+    font-size: 13px;
+  }
+  
+  .by_comment, .by, .comment { /* Sửa lỗi chính tả */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    
+    align-items: center;
+    font-size: 13px;
+  }
+  
+  .icon_by, .icon_comment { /* Sửa lỗi chính tả */
+    width: 10px;
+  }
+
+  .content_by p a:hover , .content_comment p a:hover{
+    color: rgb(244, 113, 14);
+  }
+  
+  .tab_content_header {
+    font-size: 25px;
+
+  }
+
+  .tab_content_header a b:hover{
+    color: rgb(255, 167, 3);
+  }
+  
+  .tab_content_content p {
+    font-family: "Poppins", sans-serif; 
+    font-size: 14px;
+    line-height: 2.5;
+  }
+
+
+  
+  .tab_content_button{
+    margin-top: 20px;
+  }
+
+  .tab_content_button #docthem{
+    background-color: rgb(250, 238, 221);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    justify-items: center;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+  }
+
+  .tab_content_button #docthem:hover:hover{
+    background-color: rgb(26, 25, 25);
+  }
+  
